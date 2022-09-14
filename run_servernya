@@ -1,0 +1,2 @@
+
+./odoo-bin --addons-path=/home/zulkarnain/Downloads/minimarket/addons,/home/zulkarnain/Downloads/minimarket/addonszul -d zulmart --xmlrpc-port=8070 -u zulmart

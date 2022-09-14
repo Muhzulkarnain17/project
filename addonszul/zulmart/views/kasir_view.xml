@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- zulmart.kasir inherit tree view -->
+<record id="zulmart_kasir_view_tree_inherit" model="ir.ui.view">
+    <field name="name">daftar kasir</field>
+    <field name="model">zulmart.kasir</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="zulmart_person_view_tree"/>
+    <field name="arch" type="xml">  
+    <xpath expr="//field[@name='name']" position="before">
+        <field name="id_kasir"/>
+    </xpath>
+    </field>
+</record>
+
+<!-- zulmart.kasir inherit form view -->
+<record id="zulmart_kasir_view_form_inherit" model="ir.ui.view">
+    <field name="name">form kasir</field>
+    <field name="model">zulmart.kasir</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="zulmart_person_view_form"/>
+    <field name="arch" type="xml">
+    <xpath expr="//form//sheet//group[2]" position="after">
+    <group name="id" string="ID">
+        <field name="id_kasir"/>
+    </group>
+    </xpath>
+    <xpath expr="//field[@name='alamat']" position="attributes">
+        <attribute name="string">adreess</attribute>
+    </xpath>
+    </field>
+</record>
+
+<!-- zulmart.kasir action window -->
+<record id="zulmart_kasir_action" model="ir.actions.act_window">
+    <field name="name">kasir</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">zulmart.kasir</field>
+    <field name="view_mode">tree,form</field>
+</record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="zulmart_kasir_menu_act" 
+            name="kasir" 
+          parent="zulmart_pegawai_menu_categ" 
+          action="zulmart_kasir_action" 
+        sequence="10"/>
+
+</odoo>

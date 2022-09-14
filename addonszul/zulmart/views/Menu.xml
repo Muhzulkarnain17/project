@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem id="zulmart_menu_root" 
+            name="zul Mart" 
+        sequence="10"/>
+
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="zulmart_barang_menu_categ" 
+                name="barang" 
+              parent="zulmart_menu_root" 
+            sequence="10"/>
+
+            <!-- This Menu Item Must have a parent -->
+            <menuitem id="zulmart_pegawai_menu_categ" 
+                    name="pegawai" 
+                  parent="zulmart_menu_root"
+                sequence="20"/>
+
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_zulmart_kelompokbarang,access.zulmart.kelompokbarang,model_zulmart_kelompokbarang,,1,1,1,1
+access_zulmart_barang,access.zulmart.barang,model_zulmart_barang,,1,1,1,1
+access_zulmart_person,access.zulmart.person,model_zulmart_person,,1,1,1,1
+access_zulmart_kasir,access.zulmart.kasir,model_zulmart_kasir,,1,1,1,1
+access_zulmart_cleaningservice,access.zulmart.cleaningservice,model_zulmart_cleaningservice,,1,1,1,1
