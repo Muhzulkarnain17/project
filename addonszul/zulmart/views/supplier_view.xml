@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- zulmart.supplier tree view -->
+    <record id="zulmart_supplier_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Supplier</field>
+        <field name="model">zulmart.supplier</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="alamat"/>
+                <field name="no_telp"/>
+                <field name="barang_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- zulmart.supplier form view -->
+    <record id="zulmart_supplier_view_form" model="ir.ui.view">
+        <field name="name">Form Supplier</field>
+        <field name="model">zulmart.supplier</field>
+        <field name="arch" type="xml">
+            <form string="supplier">
+                <sheet>
+                    <group>
+                        <!-- Add your fields here -->
+                        <field name="name"/>
+                        <field name="alamat"/>
+                        <field name="no_telp"/>
+                    </group>
+                    <group name="barang" string="Barang">
+                        <field name="barang_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- zulmart.supplier action window -->
+    <record id="zulmart_supplier_action" model="ir.actions.act_window">
+        <field name="name">daftar supplier</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">zulmart.supplier</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="zulmart_supplier_menu_act" 
+            name="supplier" 
+          parent="zulmart_menu_root" 
+          action="zulmart_supplier_action" 
+        sequence="40"/>
+
+</odoo>

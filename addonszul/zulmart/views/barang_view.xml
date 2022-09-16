@@ -10,7 +10,9 @@
             <field name="name"/>
             <field name="harga_beli"/>
             <field name="harga_jual"/>
+            <field name="stok" />
             <field name="kelompokbarang_id"/>
+            <field name="supplier_id" />
         </tree>
     </field>
 </record>
@@ -26,10 +28,15 @@
                    <field name="name"/>
                    <field name="harga_beli"/>
                    <field name="harga_jual"/>
+                   <field name="stok" />
                     
                 </group>
                 <group name="kelompokbarang" string="kelompok barang">
                    <field name="kelompokbarang_id"/> 
+                </group>
+                <group name="supplier" string="supplier">
+                    <field name="supplier_id"/>
+                    
                 </group>
             </sheet>
         </form>

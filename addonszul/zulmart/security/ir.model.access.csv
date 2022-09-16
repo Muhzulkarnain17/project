@@ -4,3 +4,6 @@ access_zulmart_barang,access.zulmart.barang,model_zulmart_barang,,1,1,1,1
 access_zulmart_person,access.zulmart.person,model_zulmart_person,,1,1,1,1
 access_zulmart_kasir,access.zulmart.kasir,model_zulmart_kasir,,1,1,1,1
 access_zulmart_cleaningservice,access.zulmart.cleaningservice,model_zulmart_cleaningservice,,1,1,1,1
+access_zulmart_supplier,access.zulmart.supplier,model_zulmart_supplier,,1,1,1,1
+access_zulmart_penjualan,access.zulmart.penjualan,model_zulmart_penjualan,,1,1,1,1
+access_zulmart_detailpenjualan,access.zulmart.detailpenjualan,model_zulmart_detailpenjualan,,1,1,1,1
